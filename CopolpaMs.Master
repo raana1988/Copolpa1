@@ -1,0 +1,141 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CopolpaMs.master.cs" Inherits="CopolpaSite.CopolpaMs" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="Style2.css" />
+    <link rel="stylesheet" href="foundation.css" />
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .top-bar-section li:not(.has-form) a:not(.button) {
+            padding-right: 18px;
+            padding-left: 24px;
+        }
+
+        .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
+            background: #333333;
+            color: #FFFFFF;
+            padding-right: 12px;
+        }
+
+        .top-bar-section .divider,
+        .top-bar-section [role="separator"] {
+            border-top: solid 1px #999999;
+            clear: both;
+            height: 1px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="row">
+                <div class="small-3 columns" style="height: 50px"></div>
+                <div class="small-6 columns" style="background: #333333; text-align: center;">
+                    <!--------------------------------LOGO----------------------------->
+                    <img src="images/logocopolpa.png" />
+                    <!------------------------------MENU------------------------------->
+                    <nav class="top-bar" data-topbar>
+                        <ul class="title-area">
+                            <li class="name"></li>
+
+                            <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+                        </ul>
+
+                        <section class="top-bar-section">
+                            <ul class="right">
+
+                                <li class="has-dropdown"><a href="#">تماس با ما</a>
+                                    <ul class="dropdown">
+                                        <li><a href="#">شعب</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">صدای مشتری</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">خدمات پس از فروش</a></li>
+                                    </ul>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="#">درباره ما</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">سوالات متداول</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">همکاری</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">تور مجازی</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">گارانتی</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">محصولات</a></li>
+                            </ul>
+                        </section>
+                    </nav>
+
+                    <!-- Initialize Foundation JS -->
+                    <script>
+                        $(document).ready(function () {
+                            $(document).foundation();
+                        })
+                    </script>
+
+                </div>
+                <div class="small-3 columns" style=""></div>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <!--------------------------------FOOTER----------------------------------->
+            <div class="row">
+                <div class="small-12 columns" style="background: #333333">
+                    <div class="row">
+                <div class="small-3 columns" style="height: 50px">
+                  <a href="#"> <img src="images/homeicon.png" style="margin-top: 71px;margin-left: 74px;"/> </a> 
+                </div>
+                <div class="small-6 columns" style="text-align: center;">
+                    <nav class="top-bar" data-topbar>
+                        <ul class="title-area">
+                            <li class="name"></li>
+
+                            <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+                        </ul>
+
+                        <section class="top-bar-section">
+                            <ul class="right">
+                                <li><a href="#">تماس با ما</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">درباره ما</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">سوالات متداول</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">همکاری</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">تور مجازی</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">گارانتی</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">محصولات</a></li>
+                            </ul>
+                        </section>
+                    </nav>
+
+                    <!-- Initialize Foundation JS -->
+                    <script>
+                        $(document).ready(function () {
+                            $(document).foundation();
+                        })
+                    </script>
+
+                </div>
+                <div class="small-3 columns" style=""></div>
+            </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
