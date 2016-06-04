@@ -1,0 +1,23 @@
+﻿body {
+   padding:0px;
+   margin:0px;
+   font-family:'B Yekan';
+}
+.black {
+    width:3.938em;
+    height:43px;
+    background:#333333;
+    margin-top: 45px;
+}
+.example {
+    max-width: 100%;
+    padding-top:70px;
+  }
+#main {
+    /*max-width:100%;*/
+}
+.submit {
+    font-family:'B Yekan';
+    font-size:12px;
+    color:#808080;
+}
